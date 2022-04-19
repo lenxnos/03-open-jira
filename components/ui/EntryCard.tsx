@@ -8,7 +8,7 @@ interface EntryCardProps {
   entry: Entry;
 }
 
-export const EntryCard: FC<EntryCardProps> = ({ entry }: EntryCardProps) => {
+export const EntryCard: FC<EntryCardProps> = ({ entry }) => {
   const { startDragging, endDragging } = useContext(UIContext);
 
   const onDragStart = (e: DragEvent<HTMLDivElement>) => {
